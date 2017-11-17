@@ -1,3 +1,11 @@
 hello/Greeting.class
-hello/GreetingController.class
+hello/model/User.class
+hello/model/Role.class
+hello/WebSecurityConfig.class
+hello/MvcConfig.class
+hello/UserService.class
+hello/MainController.class
+hello/repository/UserRepository.class
 hello/Application.class
+hello/GreetingController.class
+hello/repository/RoleRepository.class

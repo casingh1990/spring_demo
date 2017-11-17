@@ -1,3 +1,12 @@
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/MvcConfig.java
 /home/ubuntu/spring_demos/rest_demo/src/main/java/hello/GreetingController.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/WebSecurityConfig.java
 /home/ubuntu/spring_demos/rest_demo/src/main/java/hello/Greeting.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/repository/RoleRepository.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/repository/UserRepository.java
 /home/ubuntu/spring_demos/rest_demo/src/main/java/hello/Application.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/MainController.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/UserServiceImpl.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/model/Role.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/UserService.java
+/home/ubuntu/spring_demos/rest_demo/src/main/java/hello/model/User.java
