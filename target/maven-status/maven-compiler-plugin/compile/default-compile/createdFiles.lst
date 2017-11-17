@@ -9,3 +9,4 @@ hello/repository/UserRepository.class
 hello/Application.class
 hello/GreetingController.class
 hello/repository/RoleRepository.class
+hello/UserServiceImpl.class
