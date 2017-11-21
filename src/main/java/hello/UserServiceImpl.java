@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import hello.model.Role;
 import hello.model.User;
+import hello.service.UserService;
 import hello.repository.RoleRepository;
 import hello.repository.UserRepository;
 

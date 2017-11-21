@@ -64,6 +64,12 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <dependency>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk</artifactId>
+          <version>1.9.6</version>
+        </dependency>
+
     </dependencies>
 
     <properties>
@@ -72,6 +78,14 @@
 
 
     <build>
+      <resources>
+         <resource>
+             <directory>${env.HOME}/.aws/</directory>
+         </resource>
+         <resource>
+            <directory>src/main/resources/</directory>
+         </resource>
+     </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

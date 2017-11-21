@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>CASingh Demo Spring Application</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/upload.js"> </script>
+</head>
+
+<body>
+	<form th:action="@{/registration}" method="get">
+		<button class="btn btn-md btn-warning btn-block">File Upload Form</button>
+	</form>
+
+	<div class="container">
+		<div th:if="${message}">
+			<h2 th:text="${message}"/>
+		</div>
+		<div id="infos"></div>
+		<div>
+			<form method="POST" enctype="multipart/form-data" action="/files" class="form-signin" >
+					<label for="file">File to upload:&nbsp;&nbsp;</label><input type="file" id="file" name="file" onchange="setFileInfo(this.files);" /><br />
+					<input type="submit" value="Upload"  class="btn btn-lg btn-primary btn-block"  /><br />
+			</form>
+		</div>
+
+		<div class="center-block"  style="width:80%" >
+			<div th:each="file : ${files}" class="embed-responsive embed-responsive-16by9">
+			  <video controls="true" >
+					<source th:src="${file}" />
+				</video>
+			</div>
+			<a th:href="${file}" th:text="${file}" />
+		</div>
+	</div>
+</body>
+</html>
